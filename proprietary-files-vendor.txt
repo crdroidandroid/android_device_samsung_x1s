@@ -1,4 +1,4 @@
-# Proprietary files - from Samsung package version G981BXXS6CUA8, unless pinned
+# Proprietary files - from Samsung package version G981BXXU6DUB5, unless pinned
 
 ### AUDIO
 vendor/etc/SoundBoosterParam.txt
@@ -68,7 +68,7 @@ vendor/lib64/soundfx/libswdap.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/libaudioparamupdate.so
 vendor/lib/libaudioparamupdate.so
-vendor/lib/lib_SamsungRec_08010.so
+vendor/lib/lib_SamsungRec_08020.so
 vendor/lib/liblastaboxmsg.so
 vendor/lib/lib_lvacfs.so
 vendor/lib64/libengmode_client.so
@@ -77,8 +77,6 @@ vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib/libsemnativecarrierfeature.so
 vendor/lib64/libsecril-client.so
 vendor/lib/libsecril-client.so
-
-### AUDIO_FIRMWARE
 
 ### BIOMETRICS_FINGERPRINT
 vendor/lib/libbauthserver.so
@@ -98,7 +96,6 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
-### BLUETOOTH_FIRMWARE
 
 # CAMERA
 -vendor/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
@@ -115,6 +112,7 @@ vendor/lib/hw/camera.exynos990.so
 vendor/lib/libtriplepreview_interface.so
 vendor/lib/vendor.samsung.camera.device@5.0-impl.so
 vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
+vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
@@ -125,6 +123,7 @@ vendor/lib64/hw/camera.exynos990.so
 vendor/lib64/libtriplepreview_interface.so
 vendor/lib64/vendor.samsung.camera.device@5.0-impl.so
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
+vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 
 # CAMERA_DEPENDENCIES
@@ -191,10 +190,6 @@ vendor/lib64/libIDDQD_interface.so
 vendor/lib64/libLocalTM_preview_core.so
 vendor/lib64/libOpenCv.camera.samsung.so
 
-### CAMERA_FIRMWARE
-
-### CHARGER_FIRMWARE
-
 # CODECS
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
@@ -255,81 +250,40 @@ vendor/lib64/nfc_nci_sec.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # OMX
-vendor/etc/somxreg.conf
-vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so
-vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so
-vendor/lib/omx/libOMX.Exynos.AVC.WFD.Encoder.so
-vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so
-vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so
-vendor/lib/omx/libOMX.Exynos.HEVC.WFD.Encoder.so
-vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so
-vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
-vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so
-vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so
-vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so
-vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so
-vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
+# OMX encoders/decoders - from x1s G980FXXS5BTJ4
+vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so|da98f2c07d592e5d7a6726feea0adeb3be4f3716
+vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so|6a9bdd5e8df7ab291596a23d21c2fe49cf36d446
+vendor/lib/omx/libOMX.Exynos.AVC.WFD.Encoder.so|fb88d6dd0bde3ef2013f6f9856225ae514b3dc0f
+vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so|9563c89ee7fb3b40e0b14d7c3d7900348dd1d394
+vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so|12965f4547b8bd4c981e594caf77ce5ece536e51
+vendor/lib/omx/libOMX.Exynos.HEVC.WFD.Encoder.so|8cede960a26b60b29eefce4f4abb499c3228107f
+vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|33781fc3ba2f88ed7e3c643f6e906296464838c7
+vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|d34ae21a18f37c4952b4f8e41fc77295c987e442
+vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so|09d096eff0a8a7ed62adbc04e78c36688eb7f3d3
+vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so|ea3ec82a490222748c2315f5be0c43a33849b65b
+vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so|be8bb7695c3c2c0da0636e2ab1066a01005fd4ad
+vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so|346343e3f6e9d156dbb41582be0117bf8586511c
+vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so|bf3f9e3b40b74c775d51387f8f818bbf3622b68f
 # FIXME: Check if any of these can be built from source
 vendor/lib/vndk/libstagefright_foundation.so
 vendor/lib/libExynosOMX_Core.so
 vendor/lib/libExynosOMX_Resourcemanager.so
-vendor/lib/libsomx263dsw.so
-vendor/lib/libsomx264dsw.so
-vendor/lib/libsomxadpcmd.so
-vendor/lib/libsomxamrd.so
-vendor/lib/libsomxaped.so
-vendor/lib/libsomxcmn.so
-vendor/lib/libsomxcore_vendor.so
-vendor/lib/libsomxflacd.so
-vendor/lib/libsomxhevcdsw.so
-vendor/lib/libsomxmp3d.so
-vendor/lib/libsomxmp4vdsw.so
-vendor/lib/libsomxmp43d.so
-vendor/lib/libsomxnaace.so
-vendor/lib/libsomxvc1dsw.so
-vendor/lib/libsomxvp8d.so
-vendor/lib/libsomxwmad.so
-vendor/lib/libsomxwmv7d.so
-vendor/lib/libsomxwmv8d.so
 vendor/lib/libstagefright_omx_vendor.so
-# FIXME END
-vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so
-vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.AVC.WFD.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so
-vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.HEVC.WFD.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
-vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so
-vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so
-vendor/lib64/omx/libOMX.Exynos.VP9.Encoder.so
-vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so
-# FIXME: Check if any of these can be built from source
+vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so|68464a169d262ed381544c9643fa42ca0aeec295
+vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so|679cdae9460b4dd49ea14170de757be75f744bd1
+vendor/lib64/omx/libOMX.Exynos.AVC.WFD.Encoder.so|cc494672ad34354def9a049e9ba0046424edb167
+vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so|0663da8125c80efeddb4e0d01c6652a88c9b4301
+vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so|a50712634779f245cccacbc08bcac5f9ece42417
+vendor/lib64/omx/libOMX.Exynos.HEVC.WFD.Encoder.so|a806b6f301080ee95ce096d55f15543ba8d96f85
+vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so|d0e963ac48f0ee38e6e01ac98bbf4f7a65efc943
+vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so|f1500aee02057ec6941a1d1e67097f499264cb5d
+vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so|1e68468c0dc567cf7878a9be780a972f03093dc7
+vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so|d42143336c9e69da4ba7718992b84f8bb537fc89
+vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so|dae0a387a488fb5204a67945f290f7c8ff907439
+vendor/lib64/omx/libOMX.Exynos.VP9.Encoder.so|93558d334875fcb6bcc30e282d48ff0d604e9fe8
+vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so|16894708dc7afbba77a2a5e0a715b3cbc7ea92e3
 vendor/lib64/libExynosOMX_Core.so
 vendor/lib64/libExynosOMX_Resourcemanager.so
-vendor/lib64/libsomx263dsw.so
-vendor/lib64/libsomx264dsw.so
-vendor/lib64/libsomxadpcmd.so
-vendor/lib64/libsomxamrd.so
-vendor/lib64/libsomxaped.so
-vendor/lib64/libsomxcmn.so
-vendor/lib64/libsomxcore_vendor.so
-vendor/lib64/libsomxflacd.so
-vendor/lib64/libsomxhevcdsw.so
-vendor/lib64/libsomxmp3d.so
-vendor/lib64/libsomxmp4vdsw.so
-vendor/lib64/libsomxmp43d.so
-vendor/lib64/libsomxnaace.so
-vendor/lib64/libsomxvc1dsw.so
-vendor/lib64/libsomxvp8d.so
-vendor/lib64/libsomxwmad.so
-vendor/lib64/libsomxwmv7d.so
-vendor/lib64/libsomxwmv8d.so
-# FIXME END
-
-### OMX_FIRMWARE
 
 ### POWER
 vendor/lib/hw/power.default.so
@@ -387,7 +341,6 @@ vendor/lib64/libteecl.so
 vendor/lib64/libuuid.so
 
 # TEEGRIS_FIRMWARE
-vendor/tee/00000000-0000-0000-0000-000000000046
 vendor/tee/00000000-0000-0000-0000-00000000dead
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
@@ -412,12 +365,12 @@ vendor/tee/00000000-0000-0000-0000-64756c444152
 vendor/tee/00000000-0000-0000-0000-656e676d6f64
 vendor/tee/00000000-0000-0000-0000-657365636f6d
 vendor/tee/00000000-0000-0000-0000-6d73745f5441
-vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/driver/00000000-0000-0000-0000-00535453540b
 vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476
 vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
 vendor/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_
+vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/tui/resolution_common/ID00000100
 
 ### SAMSUNG_SLSI_CONFIGSTORE
@@ -484,7 +437,6 @@ vendor/lib64/libgraphgen_misc.so
 vendor/lib64/libgraphgen_ann_nnc.so
 vendor/lib64/libgraphgen_network.so
 vendor/lib64/libgraphgen_intermediate_process.so
-vendor/lib64/libgraphgen_partition.so
 vendor/lib64/libgraphgen_export.so
 vendor/lib64/libcrane_compiler.so
 vendor/lib64/libnpu_compiler.so
@@ -525,8 +477,6 @@ vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 vendor/lib64/hw/memtrack.exynos990.so
 vendor/lib/hw/memtrack.exynos990.so
 
-### SAMSUNG_SLSI_FIRMWARE
-
 ### SENSORS
 vendor/etc/sensors/hals.conf
 vendor/lib/sensors.flicker.so
@@ -535,8 +485,6 @@ vendor/lib/sensors.sensorhub.so
 vendor/lib64/sensors.flicker.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.sensorhub.so
-
-### SOUNDTRIGGER_FIRMWARE
 
 ### WIDEVINE
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
@@ -558,12 +506,14 @@ vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/APBiBF_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/APSV_AUDIO_SLSI.bin
+vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/NPU_NFD_P4.7.tflite
 vendor/firmware/SoundBoosterParam.bin
 vendor/firmware/a2dpcom.bin
 vendor/firmware/abox_tplg.bin
 vendor/firmware/abox_tplg.conf
+vendor/firmware/avsyncmix.bin
 vendor/firmware/bayer2rgb.bin
 vendor/firmware/bayer2yuv.bin
 vendor/firmware/bcm4375B1_murata.hcd
@@ -651,6 +601,7 @@ vendor/firmware/setfile_gw2.bin
 vendor/firmware/sv.bin
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
+vendor/firmware/txse3.bin
 vendor/firmware/usbin.bin
 vendor/firmware/usbout.bin
 vendor/firmware/volumemonitor.bin
