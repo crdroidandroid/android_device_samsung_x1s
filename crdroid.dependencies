@@ -1,0 +1,67 @@
+[
+    {
+            "repository": "crdroidandroid/android_device_samsung_universal9830-common",
+        "target_path": "device/samsung/universal9830-common",
+        "branch": "16.0-x1s"
+    },
+    {
+            "repository": "crdroidandroid/android_device_samsung_slsi_sepolicy",
+        "target_path": "device/samsung_slsi/sepolicy",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung",
+        "target_path": "hardware/samsung",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi_nfc",
+        "target_path": "hardware/samsung_slsi/nfc",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_config",
+        "target_path": "hardware/samsung_slsi/config",
+        "branch": "16.0-x1s"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_exynos",
+        "target_path": "hardware/samsung_slsi/exynos",
+        "branch": "16.0-x1s"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_exynos5",
+        "target_path": "hardware/samsung_slsi/exynos5",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_graphics",
+        "target_path": "hardware/samsung_slsi/graphics",
+        "branch": "16.0-x1s"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_interfaces",
+        "target_path": "hardware/samsung_slsi/interfaces",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_openmax",
+        "target_path": "hardware/samsung_slsi/openmax",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/android_kernel_samsung_universal9830",
+        "target_path": "kernel/samsung/universal9830",
+        "branch": "16.0-x1s"
+    },
+    {
+            "repository": "crdroidandroid/proprietary_vendor_samsung_x1s",
+        "target_path": "vendor/samsung/x1s",
+        "branch": "16.0"
+    },
+    {
+            "repository": "crdroidandroid/proprietary_vendor_samsung_universal9830-common",
+        "target_path": "vendor/samsung/universal9830-common",
+        "branch": "16.0-x1s"
+    }
+]
