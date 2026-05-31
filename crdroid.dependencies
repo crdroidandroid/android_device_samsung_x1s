@@ -41,7 +41,7 @@
     },
     {
             "repository": "crdroidandroid/android_hardware_samsung_slsi-linaro_interfaces",
-        "target_path": "hardware/samsung_slsi-lianro/interfaces",
+        "target_path": "hardware/samsung_slsi-linaro/interfaces",
         "branch": "16.0"
     },
     {
